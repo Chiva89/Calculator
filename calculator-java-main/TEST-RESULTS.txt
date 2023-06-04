@@ -1,0 +1,80 @@
+                                        Black - Box testiranje Calculator
+
+Testiranje osnovnoih aritmetickih operacija:
+Test1: " 125 + 125 = 250"
+Ocekivani rezultat = 250.
+
+Test2: " 1530 - 250 = 1280"
+Ocekivani rezultat = 1280.
+
+Test3: " 125 * 125 = 15625"
+Ocekivani rezultat = 15625.
+
+Test4: " 5400 / 580 = 9.310344827586207"
+Ocekivani rezultat =  9.310344827586207.
+
+Testiranje mnozenja i deljenja sa 0:
+Test5: " 100 * 0 = 0 "
+Ocekivani rezultat = 0.
+
+Test6: " 100 / 0 = infinity"
+Ocekivani rezultat = Cannot devide by zero.
+
+Test nepostojeće operacije:
+Test7: "25 # 25 = Error"
+Ocekivani rezultat:greška ili specifična poruka koja ukazuje na nepodržanu operaciju.
+
+Test neispravne sintakse:
+Test8: " 2 + 3 + = 5"
+Očekivani rezultat: 5.
+
+Test prekoračenja granica:
+Test9:"1.0e50 + 1.0e50 = Infinity"
+Očekivani rezultat: 2e+50.
+
+Test sa više operacija:
+Test10: "5 + 3 * 2 - 4 / 2 = 9"
+Očekivani rezultat:9.
+
+Test izrazi koji ukljucuju zagrade:
+Test11: "(2 + 3) * 4 = Error"
+Očekivani rezultat:20.
+
+Test sa negativnim brojevima:
+Test12:"(-2) * 3 = Error"
+Očekivani rezultat: -6.
+
+Test sa decimalnim brojevima:
+Test13: "1.5 + 2.75 = 4.25"
+Očekivani rezultat: 4.25.
+
+Testiranje unosa izraza koji sadrži samo jedan broj bez ikakvih operacija:
+Test14: "5" = "5"
+Očekivani rezultat: 5.
+
+Testiranje unosa izraza koji sadrži samo jednu operaciju bez brojeva:
+Test15: "+" = "0".
+Očekivani rezultat:"0" or error.
+ 
+Testiranje unosa izraza koji sadrži više uzastopnih operacija istog tipa:
+Test16: "3 +++++ 2 = Error"
+Očekivani rezultat:"ERROR" ili neka druga indikacija greške.
+
+Testiranje unosa izraza koji sadrži velike brojeve:
+Test17:"12345678901234567890 + 9876543210987654321 = 2.2222223E19
+Ocekivani rezultat:22222222112222222211
+
+Testiranje deljenja dva broja sa ocekivanjem rezultata sa puno decimala:
+Test18: " 10 / 3 = 3.33333333333333 "
+Ocekivani rezultat:3.33333333333333.
+
+
+
+
+
+
+
+
+
+
+  
